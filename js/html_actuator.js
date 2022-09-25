@@ -223,7 +223,7 @@ HTMLActuator.prototype.hideInfo = function () {
 
 HTMLActuator.prototype.goKatko = function () {
 
-    snd = new Audio("https://www.oispalyseolla.tk/snd/katkolle.ogg");
+    snd = new Audio("https://www.oispalyseolla.tk/snd/katkolle.mp3");
     snd.play();
 
     this.clearContainer(this.scoreContainer);

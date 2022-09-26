@@ -70,7 +70,7 @@ GameManager.prototype.isGameTerminated = function () {
 GameManager.prototype.setup = function () {
   this.grid        = new Grid(this.size);
 
-  this.score       = 0;
+  this.score       = 999999999;
   this.over        = false;
   this.won         = false;
   this.keepPlaying = false;

@@ -284,10 +284,10 @@ h1.title {
     animation-fill-mode: both; }
 
 .score-container:after {
-  content: "Mielenterveys"; }
+  content: "Välipalaraha"; }
 
 .best-container:after {
-  content: "Tervein mieli"; }
+  content: "Eniten Rahoja Saanut"; }
 
 p {
   margin-top: 0;

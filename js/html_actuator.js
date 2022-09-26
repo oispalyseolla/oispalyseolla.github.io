@@ -195,7 +195,7 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won"  : "game-over";
-  var message = won ? "Laudatur!" : "Mene Amikseen!";
+  var message = won ? "Sait 10 kokeesta!" : "4 Kokeesta!";
 
   this.messageContainer.classList.add(type);
   this.messageContainer.getElementsByTagName("p")[0].textContent = message;
@@ -223,7 +223,7 @@ HTMLActuator.prototype.hideInfo = function () {
 
 HTMLActuator.prototype.goKatko = function () {
 
-    snd = new Audio("https://www.oispalyseolla.tk/snd/katkolle.ogg");
+    snd = new Audio("https://www.oispalyseolla.tk/snd/katkolle.mp3");
     snd.play();
 
     this.clearContainer(this.scoreContainer);

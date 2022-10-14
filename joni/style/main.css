@@ -284,10 +284,10 @@ h1.title {
     animation-fill-mode: both; }
 
 .score-container:after {
-  content: "Välipalaraha"; }
+  content: "Kunto"; }
 
 .best-container:after {
-  content: "Eniten Rahoja Saanut"; }
+  content: "Paras Kunto"; }
 
 p {
   margin-top: 0;

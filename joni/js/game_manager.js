@@ -51,7 +51,7 @@ GameManager.prototype.goKatko = function () {
   else {
       //Ei tarpeeksi kuntoa juomatauolle!
      // alert("Ei oo tarpeeks kuntoa juomatauolle!");
-    snd = new Audio("https://www.oispalyseolla.tk/snd/buzz.mp3");
+    snd = new Audio("https://www.oispalyseolla.tk/joni/snd/buzz.mp3");
     snd.play();
   }
 

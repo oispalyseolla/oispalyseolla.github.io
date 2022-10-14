@@ -16,7 +16,7 @@ window.requestAnimationFrame(function () {
         "https://www.oispalyseolla.tk/img/512.png",
         "https://www.oispalyseolla.tk/img/1024.png",
         "https://www.oispalyseolla.tk/img/2048.png",
-	'https://www.oispalyseolla.tk/img/super.png",
+	"https://www.oispalyseolla.tk/img/super.png",
 	"https://www.oispalyseolla.tk/img/katko.png"
 
     ];

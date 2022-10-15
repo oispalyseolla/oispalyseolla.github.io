@@ -158,7 +158,7 @@ HTMLActuator.prototype.updateScore = function (score) {
 
   if (difference > 0) {
 
-    snd = new Audio("https://www.oispalyseolla.tk/snd/pen/pencil_scribble" + Math.floor(Math.random() * 3).toString() + ".ogg")
+    snd = new Audio("https://www.oispalyseolla.tk/joni/snd/pen/pencil_scribble" + Math.floor(Math.random() * 3).toString() + ".mp3")
 
     var addition = document.createElement("div");
     addition.classList.add("score-addition");
@@ -180,7 +180,7 @@ HTMLActuator.prototype.updateScore = function (score) {
   }
   else
   {
-    snd = new Audio("https://www.oispalyseolla.tk/snd/paper/page_turning" + Math.floor(Math.random() * 3).toString() + ".ogg");
+    snd = new Audio("https://www.oispalyseolla.tk/joni/snd/paper/page_turning" + Math.floor(Math.random() * 3).toString() + ".mp3");
   }
 
   snd.play();

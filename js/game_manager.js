@@ -49,8 +49,8 @@ GameManager.prototype.goKatko = function () {
 
   }
   else {
-      //ei tarpeeksi mielenterveyttä TVT-tunnille!
-     // alert("Ei oo tarpeeks välipalarahaa Kirjastovälkälle");
+      //ei tarpeeksi mielenterveyttä vapetauolle!
+     // alert("Ei oo tarpeeks mielenterveyttä vapetauolle!");
     snd = new Audio("https://www.oispalyseolla.tk/snd/buzz.mp3");
     snd.play();
   }
@@ -77,9 +77,9 @@ GameManager.prototype.setup = function () {
 
     //preload
     snd = [];
-    snd[0] = new Audio("https://www.oispalyseolla.tk/snd/paper/page_turning0.ogg");
-    snd[1] = new Audio("https://www.oispalyseolla.tk/snd/paper/page_turning1.ogg");
-    snd[2] = new Audio("https://www.oispalyseolla.tk/snd/paper/page_turning2.ogg");
+    snd[0] = new Audio("https://www.oispalyseolla.tk/snd/paper/page_turning0.mp3");
+    snd[1] = new Audio("https://www.oispalyseolla.tk/snd/paper/page_turning1.mp3");
+    snd[2] = new Audio("https://www.oispalyseolla.tk/snd/paper/page_turning2.mp3");
 
   // Add the initial tiles
   this.addStartTiles();

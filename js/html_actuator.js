@@ -15,31 +15,31 @@ function HTMLActuator() {
 
 dogeSayings = [
   // En jaksanu lajitella :D
-  'Kyl tulee välipalaa!!',
-  'Onks kirjastovälkkä jo?',
+  'Ei marjoja seinille!!',
+  'Simppa sponssaa!!',
   'Biljardi <3',
-  'Samille kertomaan',
-  'Antti takas!',
-  'Symbioosi on top', // Symbioosi on paras asia koko maailmassa
-  'TET-Jakso <3', // Jos oot kaverin kaa nii todella jees
-  'Olli on chilli', // Ukolla on ponytail
-  'Prosenttilaskut <3', // Liian helppoja
-  'Erikoispojat', // Jonin vihaamat ukot
+  'Rip 1.0',
+  'Puuropäivä <3',
+  'Joinaa Discord Servulle!', // legit joinaa
+  'Eii muna', // Laurin toinen lempisana
+  'Oisko vessaa?', // Ei tarvii selittää
+  'Lainaatko sun laturii?', // No en hitsis
+  'Napsuu!', // Laurin lempisana
   'Millo mopokortti?', // Miks kysytää nii paljo???
-  'Lisään avauskokoonpanoon!',
+  'www.eduskunta.cf', // Mainostus on kivaa
   'Kymppi tulee!', // Osmolla nii rankkoja kokeit et en usko :D
-  'Sari Nykter rakastaa Jeree', // Terveisin Lauri (Peitenimi)
-  'Osmo Solmuu!', // Just näi
-  'Helppoo ku mikä!', // Sanoo Osmo
-  'Herramon jeesus...', // Ku Osmo näkee meikäläisen vastaukset kokeessa
-  'älä keiku sillä tuolilla!', // Opet ei tajua vaa :D
-  'Näkkäri <3',  // Tykkään varastaa ruokailun jälkee ei siinä :D
+  'Sage rakastaa jerskaa!', // Terveisin Lauri (Peitenimi)
+  'Nyt niiaa!!', // tää
+  'Helppoo ku mikä!', // Meikä compis
+  'Meneekö kukaa uimaa?', // Ei hitos
+  'Maksan takas!', // POV: liikkatunti
+  'Osuu G-Spottii',  // En selityst
   'Nyt niias lujaa', // Meinaa et pieras lujaa
   'Kellarin vessa suljettu.', // 09 vapettaa liian lujaa siel
   'Millo ruokailu?', // Ei niit opettajia kiinnosta
-  'Ruokailu!',
-  'Bilsaa <3', // Oppii Symbioosist :D
-  'En osaa' // Meikä matikan tunneilla
+  'Kuvist saatu luvat!', // Opettajille viesti
+  'Sisu möläytti!', // fak juu
+  'Mee rehtorille' // Kuuluisat viimeiset sanat
 ]
 
 HTMLActuator.prototype.actuate = function (grid, metadata) {
@@ -161,7 +161,7 @@ HTMLActuator.prototype.updateScore = function (score) {
 
   if (difference > 0) {
 
-    snd = new Audio("https://www.oispalyseolla.tk/snd/pen/pencil_scribble" + Math.floor(Math.random() * 3).toString() + ".ogg")
+    snd = new Audio("https://www.oispalyseolla.tk/snd/pen/pencil_scribble" + Math.floor(Math.random() * 3).toString() + ".mp3")
 
     var addition = document.createElement("div");
     addition.classList.add("score-addition");
@@ -183,7 +183,7 @@ HTMLActuator.prototype.updateScore = function (score) {
   }
   else
   {
-    snd = new Audio("https://www.oispalyseolla.tk/snd/paper/page_turning" + Math.floor(Math.random() * 3).toString() + ".ogg");
+    snd = new Audio("https://www.oispalyseolla.tk/snd/paper/page_turning" + Math.floor(Math.random() * 3).toString() + ".mp3");
   }
 
   snd.play();
@@ -195,7 +195,7 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won"  : "game-over";
-  var message = won ? "Sait 10 kokeesta!" : "4 Kokeesta!";
+  var message = won ? "Selviydyit Ruokailuun!" : "Ei kestänyt mena ruokailuu :(";
 
   this.messageContainer.classList.add(type);
   this.messageContainer.getElementsByTagName("p")[0].textContent = message;

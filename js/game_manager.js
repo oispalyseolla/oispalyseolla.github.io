@@ -181,7 +181,9 @@ GameManager.prototype.move = function (direction) {
           self.score += merged.value;
 
           // The mighty 2048 tile
-          if (merged.value === 2048) self.won = true;
+        if (merged.value === 2048) self.won = true;
+    	snd = new Audio("https://www.oispalyseolla.tk/snd/victory.mp3");
+	if (merged.value === 2048) snd.play();
         } else {
           self.moveTile(tile, positions.farthest);
         }

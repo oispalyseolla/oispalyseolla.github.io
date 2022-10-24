@@ -15,26 +15,26 @@ function HTMLActuator() {
 
 dogeSayings = [
   // En jaksanu lajitella :D
-  'Ei marjoja seinille!!',
+  'Hitto ku pelottaa',
   'Simppa sponssaa!!',
-  'Biljardi <3',
+  'Horrorleffat <3',
   'Rip 1.0',
-  'Puuropäivä <3',
+  'Halloween <3',
   'Joinaa Discord Servulle!', // legit joinaa
-  'Eii muna', // Laurin toinen lempisana
-  'Oisko vessaa?', // Ei tarvii selittää
+  'Karkki vai kepponen?', // halloween.jpg
+  'Oisko tappaa?', // pikkunen referenssi
   'Lainaatko sun laturii?', // No en hitsis
-  'Napsuu!', // Laurin lempisana
+  'Tuu kauppaa', // Tarmon lempisana
   'Millo mopokortti?', // Miks kysytää nii paljo???
   'www.eduskunta.cf', // Mainostus on kivaa
   'Kymppi tulee!', // Osmolla nii rankkoja kokeit et en usko :D
-  'Sage rakastaa jerskaa!', // Terveisin Lauri (Peitenimi)
-  'Nyt niiaa!!', // tää
+  'Sage rakastaa halloweenia!', // Terveisin Lauri (Peitenimi)
+  'Kuka pieras?', // tää
   'Helppoo ku mikä!', // Meikä compis
   'Meneekö kukaa uimaa?', // Ei hitos
   'Maksan takas!', // POV: liikkatunti
   'Osuu G-Spottii',  // En selityst
-  'Nyt niias lujaa', // Meinaa et pieras lujaa
+  'Hui vi**u mä säikähdin', // no jep
   'Kellarin vessa suljettu.', // 09 vapettaa liian lujaa siel
   'Millo ruokailu?', // Ei niit opettajia kiinnosta
   'Kuvist saatu luvat!', // Opettajille viesti
@@ -195,7 +195,7 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won"  : "game-over";
-  var message = won ? "Selviydyit Ruokailuun!" : "Ei kestänyt mena ruokailuu :(";
+  var message = won ? "Selviydyit Halloweenista!" : "Karkkisi varastettiin :(";
 
   this.messageContainer.classList.add(type);
   this.messageContainer.getElementsByTagName("p")[0].textContent = message;

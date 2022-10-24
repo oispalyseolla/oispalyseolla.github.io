@@ -17,7 +17,8 @@ dogeSayings = [
   // En jaksanu lajitella :D
   'Hitto ku pelottaa',
   'Simppa sponssaa!!',
-  'Horrorleffat <3',
+  'Voitko vaa puhuu suomee lol',
+  'Kauhuleffat <3',
   'Rip 1.0',
   'Halloween <3',
   'Joinaa Discord Servulle!', // legit joinaa

@@ -60,8 +60,6 @@ GameManager.prototype.goKatko = function () {
 
 GameManager.prototype.isGameTerminated = function () {
   if (this.over || (this.won && !this.keepPlaying)) {
-    snd = new Audio("https://www.oispalyseolla.tk/snd/victory.mp3");
-    snd.play();
     return true;
   } else {
     return false;

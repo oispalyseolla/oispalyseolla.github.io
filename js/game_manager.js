@@ -49,8 +49,8 @@ GameManager.prototype.goKatko = function () {
 
   }
   else {
-      //ei tarpeeksi mielenterveyttä vapetauolle!
-     // alert("Ei oo tarpeeks mielenterveyttä vapetauolle!");
+      //ei tarpeeksi lumipalloja glögitauolle
+     // alert("Ei oo tarpeeksi lumipalloja glögitauolle!");
     snd = new Audio("https://www.oispalyseolla.tk/snd/buzz.mp3");
     snd.play();
   }

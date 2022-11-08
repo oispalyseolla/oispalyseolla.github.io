@@ -51,7 +51,7 @@ GameManager.prototype.goKatko = function () {
   else {
       //ei tarpeeksi lumipalloja glögitauolle
      // alert("Ei oo tarpeeksi lumipalloja glögitauolle!");
-    snd = new Audio("https://www.oispalyseolla.tk/snd/buzz.mp3");
+    snd = new Audio("https://oispalyseolla.tk/snd/buzz.mp3");
     snd.play();
   }
 
@@ -77,9 +77,9 @@ GameManager.prototype.setup = function () {
 
     //preload
     snd = [];
-    snd[0] = new Audio("https://www.oispalyseolla.tk/snd/paper/page_turning0.mp3");
-    snd[1] = new Audio("https://www.oispalyseolla.tk/snd/paper/page_turning1.mp3");
-    snd[2] = new Audio("https://www.oispalyseolla.tk/snd/paper/page_turning2.mp3");
+    snd[0] = new Audio("https://oispalyseolla.tk/snd/paper/page_turning0.mp3");
+    snd[1] = new Audio("https://oispalyseolla.tk/snd/paper/page_turning1.mp3");
+    snd[2] = new Audio("https://oispalyseolla.tk/snd/paper/page_turning2.mp3");
 
   // Add the initial tiles
   this.addStartTiles();
@@ -180,7 +180,7 @@ GameManager.prototype.move = function (direction) {
 
           // The mighty 2048 tile
         if (merged.value === 2048) self.won = true;
-    	snd = new Audio("https://www.oispalyseolla.tk/snd/victory.mp3");
+    	snd = new Audio("https://oispalyseolla.tk/snd/victory.mp3");
 	if (merged.value === 2048) snd.play();
         } else {
           self.moveTile(tile, positions.farthest);

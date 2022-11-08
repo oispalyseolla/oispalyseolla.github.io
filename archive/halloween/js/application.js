@@ -5,19 +5,19 @@ window.requestAnimationFrame(function () {
 
 
     var imageList = [
-        "https://www.oispalyseolla.tk/archive/halloween/img/2.png",
-        "https://www.oispalyseolla.tk/archive/halloween/img/4.png",
-        "https://www.oispalyseolla.tk/archive/halloween/img/8.png",
-        "https://www.oispalyseolla.tk/archive/halloween/img/16.png",
-        "https://www.oispalyseolla.tk/archive/halloween/img/32.png",
-        "https://www.oispalyseolla.tk/archive/halloween/img/64.png",
-        "https://www.oispalyseolla.tk/archive/halloween/img/128.png",
-        "https://www.oispalyseolla.tk/archive/halloween/img/256.png",
-        "https://www.oispalyseolla.tk/archive/halloween/img/512.png",
-        "https://www.oispalyseolla.tk/archive/halloween/img/1024.png",
-        "https://www.oispalyseolla.tk/archive/halloween/img/2048.png",
-	"https://www.oispalyseolla.tk/archive/halloween/img/super.png",
-	"https://www.oispalyseolla.tk/archive/halloween/img/katko.png"
+        "https://oispalyseolla.tk/archive/halloween/img/2.png",
+        "https://oispalyseolla.tk/archive/halloween/img/4.png",
+        "https://oispalyseolla.tk/archive/halloween/img/8.png",
+        "https://oispalyseolla.tk/archive/halloween/img/16.png",
+        "https://oispalyseolla.tk/archive/halloween/img/32.png",
+        "https://oispalyseolla.tk/archive/halloween/img/64.png",
+        "https://oispalyseolla.tk/archive/halloween/img/128.png",
+        "https://oispalyseolla.tk/archive/halloween/img/256.png",
+        "https://oispalyseolla.tk/archive/halloween/img/512.png",
+        "https://oispalyseolla.tk/archive/halloween/img/1024.png",
+        "https://oispalyseolla.tk/archive/halloween/img/2048.png",
+	"https://oispalyseolla.tk/archive/halloween/img/super.png",
+	"https://oispalyseolla.tk/archive/halloween/img/katko.png"
 
     ];
     for(var i = 0; i < imageList.length; i++ )

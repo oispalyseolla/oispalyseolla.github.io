@@ -1,4 +1,3 @@
-# Oispa Lyseolla 2.0
-2.0 Versio // 7.11.2022
-
-https://www.oispalyseolla.tk/dc
+# Oispa Lyseolla 2.0 Source Code
+Peli on annettu jollekin toiselle, koska itse ei jaksanu hostaa.
+lollista :D

@@ -1,0 +1,234 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title></title>
+</head>
+<body>
+&lt;!DOCTYPE html&gt;<br/>
+&lt;html lang=&quot;en&quot;&gt;<br/>
+    &lt;head&gt;<br/>
+        &lt;meta charset=&quot;utf&ndash;8&quot;&gt;<br/>
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device&ndash;width, initial&ndash;scale=1.0, maximum&ndash;scale=1.0, user&ndash;scalable=0&quot;&gt;<br/>
+<br/>
+        &lt;title&gt;Oispa Lyseolla v1.0&lt;/title&gt;<br/>
+<br/>
+        &lt;meta property=&quot;og:title&quot; content=&quot;Oispa Lyseolla v1&quot;&gt;<br/>
+        &lt;meta property=&quot;og:url&quot; content=&quot;https://&lt;?= $_SERVER[&quot;HTTP_HOST&quot;] . $_SERVER[&quot;REQUEST_URI&quot;] ?&gt;&quot;&gt;<br/>
+        &lt;meta property=&quot;og:site_name&quot; content=&quot;Oispa Lyseolla Experimental&quot;&gt;<br/>
+        &lt;meta property=&quot;og:image&quot; content=&quot;https://oispalyseolla.ml/og_katko.png&quot;&gt;<br/>
+        &lt;meta property=&quot;og:description&quot; content=&quot;oispalyseolla.ml/v1/&quot;&gt;<br/>
+        &lt;meta property=&quot;og:type&quot; content=&quot;website&quot;&gt;<br/>
+<br/>
+        &lt;meta name=&quot;twitter:card&quot; content=&quot;photo&quot;&gt;<br/>
+        &lt;meta name=&quot;twitter:title&quot; content=&quot;Oispa Lyseolla v1&quot;&gt;<br/>
+        &lt;meta name=&quot;twitter:site&quot; content=&quot;@light_shot&quot;&gt;<br/>
+        &lt;meta name=&quot;twitter:description&quot; content=&quot;oispalyseolla.ml/v1/&quot;&gt;<br/>
+        &lt;meta name=&quot;twitter:image:src&quot; content=&quot;https://oispalyseolla.ml/og_katko.png&quot;&gt;<br/>
+<br/>
+        &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot;&gt;<br/>
+        &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;<br/>
+<br/>
+        &lt;style type=&quot;text/css&quot;&gt;<br/>
+            p {<br/>
+                margin: 0;<br/>
+            }<br/>
+<br/>
+            *, *::before, *::after {<br/>
+                box&ndash;sizing: border&ndash;box;<br/>
+            }<br/>
+<br/>
+            .overlay, .scare {<br/>
+                position: fixed;<br/>
+<br/>
+                top: 0;<br/>
+                left: 0;<br/>
+<br/>
+                height: 100vh;<br/>
+                width: 100vw;<br/>
+            }<br/>
+<br/>
+            p.overlay&ndash;title {<br/>
+                font&ndash;size: 24px;<br/>
+                font&ndash;weight: 900;<br/>
+                color: black;<br/>
+                line&ndash;height: 1;<br/>
+<br/>
+                margin&ndash;bottom: 16px;<br/>
+            }<br/>
+<br/>
+            .overlay&ndash;button {<br/>
+                display: inline&ndash;flex;<br/>
+                align&ndash;items: center;<br/>
+<br/>
+                height: 40px;<br/>
+<br/>
+                padding&ndash;right: 24px;<br/>
+                padding&ndash;left: 24px;<br/>
+<br/>
+                font&ndash;size: 16px;<br/>
+                font&ndash;weight: 500;<br/>
+                line&ndash;height: 1;<br/>
+<br/>
+                border&ndash;radius: 4px;<br/>
+<br/>
+                margin: 4px;<br/>
+<br/>
+                cursor: pointer;<br/>
+            }<br/>
+<br/>
+            .overlay&ndash;buttons&ndash;wrapper {<br/>
+                margin: 24px &ndash;8px &ndash;8px;<br/>
+            }<br/>
+<br/>
+            #accept&ndash;button {<br/>
+                background&ndash;color: rgb(132, 94, 194);<br/>
+<br/>
+                color: white;<br/>
+            }<br/>
+<br/>
+            #decline&ndash;button {<br/>
+                color: rgb(132, 94, 194);<br/>
+<br/>
+                border: 2px solid rgb(132, 94, 194);<br/>
+            }<br/>
+<br/>
+            p.overlay&ndash;description {<br/>
+                font&ndash;size: 16px;<br/>
+                font&ndash;weight: 400;<br/>
+                color: rgba(0, 0, 0, 0.5);<br/>
+                line&ndash;height: 1.25;<br/>
+<br/>
+                margin&ndash;bottom: 16px;<br/>
+            }<br/>
+<br/>
+            a.overlay&ndash;link {<br/>
+                display: inline&ndash;block;<br/>
+<br/>
+                text&ndash;decoration: none;<br/>
+<br/>
+                font&ndash;size: 16px;<br/>
+                font&ndash;weight: 500;<br/>
+                color: rgb(132, 94, 194);<br/>
+                line&ndash;height: 1;<br/>
+<br/>
+                position: relative;<br/>
+<br/>
+                margin&ndash;top: 16px;<br/>
+            }<br/>
+<br/>
+            a.overlay&ndash;link::before {<br/>
+                position: absolute;<br/>
+<br/>
+                content: &quot;&quot;;<br/>
+<br/>
+                height: calc(50% + 4px);<br/>
+                width: calc(100% + 8px);<br/>
+<br/>
+                bottom: &ndash;4px;<br/>
+                left: &ndash;4px;<br/>
+<br/>
+                background&ndash;color: rgba(132, 94, 194, 0.1);<br/>
+            }<br/>
+<br/>
+            .overlay&ndash;body {<br/>
+                max&ndash;width: 512px;<br/>
+<br/>
+                text&ndash;align: center;<br/>
+<br/>
+                font&ndash;family: &quot;Inter&quot;, sans&ndash;serif;<br/>
+            }<br/>
+<br/>
+            .overlay[hidden] {<br/>
+                display: none;<br/>
+            }<br/>
+<br/>
+            .overlay {<br/>
+                z&ndash;index: 2;<br/>
+<br/>
+                display: flex;<br/>
+                align&ndash;items: center;<br/>
+                justify&ndash;content: center;<br/>
+<br/>
+                background&ndash;color: #f5f6fa;<br/>
+<br/>
+                padding&ndash;right: 24px;<br/>
+                padding&ndash;left: 24px;<br/>
+            }<br/>
+<br/>
+            .scare {<br/>
+                z&ndash;index: 1;<br/>
+            }<br/>
+<br/>
+            video#video {<br/>
+                height: 100%;<br/>
+                width: 100%;<br/>
+<br/>
+                object&ndash;fit: cover;<br/>
+            }<br/>
+<br/>
+            video#video::&ndash;webkit&ndash;media&ndash;controls&ndash;enclosure {<br/>
+                display:none !important;<br/>
+            }<br/>
+        &lt;/style&gt;<br/>
+    &lt;/head&gt;<br/>
+    &lt;body&gt;<br/>
+        &lt;div id=&quot;overlay&quot; class=&quot;overlay&quot;&gt;<br/>
+            &lt;div class=&quot;overlay&ndash;body&quot;&gt;<br/>
+                &lt;p class=&quot;overlay&ndash;title&quot;&gt;Cookies and user&ndash;generated content&lt;/p&gt;<br/>
+<br/>
+                &lt;p class=&quot;overlay&ndash;description&quot;&gt;This website uses cookies to offer you the most relevant information and<br/>
+                                               better understand how you use this website. Please accept cookies for<br/>
+                                               optimal performance.&lt;/p&gt;<br/>
+<br/>
+                &lt;p class=&quot;overlay&ndash;description&quot;&gt;User&ndash;generated content may not be suitable for visitors who are at &lt;b&gt;high<br/>
+                                               risk of photosensitive epileptic seizes&lt;/b&gt;.&lt;/p&gt;<br/>
+<br/>
+                &lt;div class=&quot;overlay&ndash;buttons&ndash;wrapper&quot;&gt;<br/>
+                    &lt;div id=&quot;accept&ndash;button&quot; class=&quot;overlay&ndash;button&quot;&gt;Accept&lt;/div&gt;<br/>
+                    &lt;div id=&quot;decline&ndash;button&quot; class=&quot;overlay&ndash;button&quot;&gt;Decline&lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+<br/>
+                &lt;a href=&quot;https://oispalyseolla.ml/gdpr/&quot; target=&quot;_blank&quot; class=&quot;overlay&ndash;link&quot;&gt;Privacy policy&lt;/a&gt;<br/>
+            &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+<br/>
+        &lt;div class=&quot;scare&quot;&gt;<br/>
+            &lt;video id=&quot;video&quot; class=&quot;video&quot; src=&quot;/video.mp4&quot; loop&gt;&lt;/video&gt;<br/>
+        &lt;/div&gt;<br/>
+<br/>
+        &lt;script type=&quot;text/javascript&quot;&gt;<br/>
+            const video = document.getElementById(&quot;video&quot;);<br/>
+            const overlay = document.getElementById(&quot;overlay&quot;);<br/>
+            const declineButton = document.getElementById(&quot;decline&ndash;button&quot;);<br/>
+            const acceptButton = document.getElementById(&quot;accept&ndash;button&quot;);<br/>
+<br/>
+            let hasClicked;<br/>
+<br/>
+            window.onbeforeunload = function( ) {<br/>
+                if(hasClicked) return true;<br/>
+            };<br/>
+<br/>
+            function buttonClick(event) {<br/>
+                event.preventDefault();<br/>
+                if(!hasClicked) hasClicked = true;<br/>
+                overlay.hidden = true;<br/>
+                video.play();<br/>
+                videoClick();<br/>
+            }<br/>
+<br/>
+            function videoClick(event) {<br/>
+                if(event) event.preventDefault();<br/>
+                // if not fullscreen<br/>
+                const { documentElement } = document;<br/>
+                if(documentElement.requestFullscreen) documentElement.requestFullscreen();<br/>
+                else if(documentElement.mozRequestFullScreen) documentElement.mozRequestFullScreen();<br/>
+                else if(documentElement.webkitRequestFullscreen) documentElement.webkitRequestFullscreen();<br/>
+                else if(documentElement.msRequestFullscreen) documentElement.msRequestFullscreen();<br/>
+            }<br/>
+<br/>
+            acceptButton.addEventListener(&quot;click&quot;, buttonClick);<br/>
+            declineButton.addEventListener(&quot;click&quot;, buttonClick);<br/>
+            video.addEventListener(&quot;click&quot;, videoClick);<br/>
+        &lt;/script&gt;<br/>
+    &lt;/body&gt;<br/>
+&lt;/html&gt;</body></html>

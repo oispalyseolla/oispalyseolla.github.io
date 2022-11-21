@@ -5,19 +5,19 @@ window.requestAnimationFrame(function () {
 
 
     var imageList = [
-        "https://www.oispalyseolla.tk/original/img/2.png",
-        "https://www.oispalyseolla.tk/original/img/4.png",
-        "https://www.oispalyseolla.tk/original/img/8.png",
-        "https://www.oispalyseolla.tk/original/img/16.png",
-        "https://www.oispalyseolla.tk/original/img/32.png",
-        "https://www.oispalyseolla.tk/original/img/64.png",
-        "https://www.oispalyseolla.tk/original/img/128.png",
-        "https://www.oispalyseolla.tk/original/img/256.png",
-        "https://www.oispalyseolla.tk/original/img/512.png",
-        "https://www.oispalyseolla.tk/original/img/1024.png",
-        "https://www.oispalyseolla.tk/original/img/2048.png",
-	"https://www.oispalyseolla.tk/original/img/super.png",
-	"https://www.oispalyseolla.tk/original/img/katko.png"
+        "https://www.oispalyseolla.ml/original/img/2.png",
+        "https://www.oispalyseolla.ml/original/img/4.png",
+        "https://www.oispalyseolla.ml/original/img/8.png",
+        "https://www.oispalyseolla.ml/original/img/16.png",
+        "https://www.oispalyseolla.ml/original/img/32.png",
+        "https://www.oispalyseolla.ml/original/img/64.png",
+        "https://www.oispalyseolla.ml/original/img/128.png",
+        "https://www.oispalyseolla.ml/original/img/256.png",
+        "https://www.oispalyseolla.ml/original/img/512.png",
+        "https://www.oispalyseolla.ml/original/img/1024.png",
+        "https://www.oispalyseolla.ml/original/img/2048.png",
+	"https://www.oispalyseolla.ml/original/img/super.png",
+	"https://www.oispalyseolla.ml/original/img/katko.png"
 
     ];
     for(var i = 0; i < imageList.length; i++ )

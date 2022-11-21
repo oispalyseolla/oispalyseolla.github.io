@@ -162,7 +162,7 @@ HTMLActuator.prototype.updateScore = function (score) {
 
   if (difference > 0) {
 
-    snd = new Audio("https://oispalyseolla.tk/snd/pen/pencil_scribble" + Math.floor(Math.random() * 3).toString() + ".mp3")
+    snd = new Audio("https://oispalyseolla.ml/snd/pen/pencil_scribble" + Math.floor(Math.random() * 3).toString() + ".mp3")
 
     var addition = document.createElement("div");
     addition.classList.add("score-addition");
@@ -184,7 +184,7 @@ HTMLActuator.prototype.updateScore = function (score) {
   }
   else
   {
-    snd = new Audio("https://oispalyseolla.tk/snd/paper/page_turning" + Math.floor(Math.random() * 3).toString() + ".mp3");
+    snd = new Audio("https://oispalyseolla.ml/snd/paper/page_turning" + Math.floor(Math.random() * 3).toString() + ".mp3");
   }
 
   snd.play();
@@ -224,7 +224,7 @@ HTMLActuator.prototype.hideInfo = function () {
 
 HTMLActuator.prototype.goKatko = function () {
 
-    snd = new Audio("https://oispalyseolla.tk/snd/katkolle.mp3");
+    snd = new Audio("https://oispalyseolla.ml/snd/katkolle.mp3");
     snd.play();
 
     this.clearContainer(this.scoreContainer);
@@ -239,7 +239,7 @@ HTMLActuator.prototype.goKatko = function () {
 
     //var message = "KATKOLLE!";
     var messageElement = document.createElement("img");
-    messageElement.setAttribute('src',"https://oispalyseolla.tk/img/katko.png");
+    messageElement.setAttribute('src',"https://oispalyseolla.ml/img/katko.png");
     //messageElement.textContent = message;
     //var left = 'left: 37%;';
     //var top = 'top: 10%;';

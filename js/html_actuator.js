@@ -15,27 +15,26 @@ function HTMLActuator() {
 
 dogeSayings = [
   // En jaksanu lajitella :D
-  'Hitto ku hauskaa!',
+  'Ei marjoja seinille!!',
   'Simppa sponssaa!!',
-  'Oisko glögille?',
-  'Lumisota <3',
+  'Biljardi <3',
   'Rip 1.0',
-  'Joulu <3',
+  'Puuropäivä <3',
   'Joinaa Discord Servulle!', // legit joinaa
-  'Mis mu lahjat?', //
-  'Pparille?', // pikkunen referenssi
+  'Eii muna', // Laurin toinen lempisana
+  'Oisko vessaa?', // Ei tarvii selittää
   'Lainaatko sun laturii?', // No en hitsis
-  'Tuu kauppaa', // Tarmon lempisana
+  'Napsuu!', // Laurin lempisana
   'Millo mopokortti?', // Miks kysytää nii paljo???
-  'Common Pipari W', // Mainostus on kivaa
+  'www.eduskunta.cf', // Mainostus on kivaa
   'Kymppi tulee!', // Osmolla nii rankkoja kokeit et en usko :D
-  'Sage rakastaa joulua!', // Terveisin Lauri (Peitenimi)
-  'Kuka pieras?', // tää
+  'Sage rakastaa jerskaa!', // Terveisin Lauri (Peitenimi)
+  'Nyt niiaa!!', // tää
   'Helppoo ku mikä!', // Meikä compis
-  'Hitto ku kylmä...', // Ei hitos
+  'Meneekö kukaa uimaa?', // Ei hitos
   'Maksan takas!', // POV: liikkatunti
   'Osuu G-Spottii',  // En selityst
-  'Kulkuset kilisee', // no jep
+  'Nyt niias lujaa', // Meinaa et pieras lujaa
   'Kellarin vessa suljettu.', // 09 vapettaa liian lujaa siel
   'Millo ruokailu?', // Ei niit opettajia kiinnosta
   'Kuvist saatu luvat!', // Opettajille viesti
@@ -162,7 +161,7 @@ HTMLActuator.prototype.updateScore = function (score) {
 
   if (difference > 0) {
 
-    snd = new Audio("https://oispalyseolla.ml/snd/pen/pencil_scribble" + Math.floor(Math.random() * 3).toString() + ".mp3")
+    snd = new Audio("https://www.oispalyseolla.ml/original/snd/pen/pencil_scribble" + Math.floor(Math.random() * 3).toString() + ".mp3")
 
     var addition = document.createElement("div");
     addition.classList.add("score-addition");
@@ -184,7 +183,7 @@ HTMLActuator.prototype.updateScore = function (score) {
   }
   else
   {
-    snd = new Audio("https://oispalyseolla.ml/snd/paper/page_turning" + Math.floor(Math.random() * 3).toString() + ".mp3");
+    snd = new Audio("https://www.oispalyseolla.ml/original/snd/paper/page_turning" + Math.floor(Math.random() * 3).toString() + ".mp3");
   }
 
   snd.play();
@@ -196,7 +195,7 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won"  : "game-over";
-  var message = won ? "Selviydyit Joulusta!!" : "Lumipallo osui naamaan :(";
+  var message = won ? "Selviydyit Ruokailuun!" : "Ei kestänyt mena ruokailuu :(";
 
   this.messageContainer.classList.add(type);
   this.messageContainer.getElementsByTagName("p")[0].textContent = message;
@@ -224,7 +223,7 @@ HTMLActuator.prototype.hideInfo = function () {
 
 HTMLActuator.prototype.goKatko = function () {
 
-    snd = new Audio("https://oispalyseolla.ml/snd/katkolle.mp3");
+    snd = new Audio("https://www.oispalyseolla.ml/original/snd/katkolle.mp3");
     snd.play();
 
     this.clearContainer(this.scoreContainer);
@@ -239,7 +238,7 @@ HTMLActuator.prototype.goKatko = function () {
 
     //var message = "KATKOLLE!";
     var messageElement = document.createElement("img");
-    messageElement.setAttribute('src',"https://oispalyseolla.ml/img/katko.png");
+    messageElement.setAttribute('src',"https://www.oispalyseolla.ml/original/img/katko.png");
     //messageElement.textContent = message;
     //var left = 'left: 37%;';
     //var top = 'top: 10%;';

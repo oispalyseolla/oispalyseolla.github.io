@@ -5,7 +5,7 @@ html, body {
   color: #000;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
 /*  font-family: 'Comic Sans', 'Comic Sans', Chalkboard, Helvetica, Arial, sans-serif; */
-    background: url('https://oispalyseolla.ml/img/megabg.png');
+    background: url('https://www.oispalyseolla.ml/original/img/megabg.png');
   background-attachment: fixed;
   background-position: top center;
   background-repeat: no-repeat;
@@ -284,37 +284,10 @@ h1.title {
     animation-fill-mode: both; }
 
 .score-container:after {
-  content: "Lumipalloja"; }
+  content: "Mielenterveys"; }
 
 .best-container:after {
-  content: "Eniten Lumipalloja"; }
-
-.todesktop-download-button-windows {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 54px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 4px;
-  background-color: #4e4e4e;
-  color: #ffffff;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  text-decoration: none;
-}
-.todesktop-download-button-windows > span {
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 16px;
-  line-height: 1;
-  font-weight: 500;
-  letter-spacing: .025ch;
-}
-.todesktop-download-button-windows > img, .todesktop-download-button-windows > svg {
-  width: 40px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
+  content: "Tervein Mieli"; }
 
 p {
   margin-top: 0;
@@ -545,33 +518,33 @@ hr {
     z-index: 10;
     font-size: 55px; }
   .tile.tile-2 .tile-inner {
-    background: #fff url('https://oispalyseolla.ml/img/2.png');
+    background: #fff url('https://www.oispalyseolla.ml/original/img/2.png');
     background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
 
   .tile.tile-4 .tile-inner {
-    background: #fff url('https://oispalyseolla.ml/img/4.png');
+    background: #fff url('https://www.oispalyseolla.ml/original/img/4.png');
     background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
 
   .tile.tile-8 .tile-inner {
-    background: #fff url('https://oispalyseolla.ml/img/8.png');
+    background: #fff url('https://www.oispalyseolla.ml/original/img/8.png');
     background-size: cover;}
 
   .tile.tile-16 .tile-inner {
-    background: #fff url('https://oispalyseolla.ml/img/16.png');
+    background: #fff url('https://www.oispalyseolla.ml/original/img/16.png');
     background-size: cover;}
 
   .tile.tile-32 .tile-inner {
-    background: #fff url('https://oispalyseolla.ml/img/32.png');
+    background: #fff url('https://www.oispalyseolla.ml/original/img/32.png');
     background-size: cover;}
 
   .tile.tile-64 .tile-inner {
-    background: #fff url('https://oispalyseolla.ml/img/64.png');
+    background: #fff url('https://www.oispalyseolla.ml/original/img/64.png');
     background-size: cover;}
 
   .tile.tile-128 .tile-inner {
-    background: #fff url('https://oispalyseolla.ml/img/128.png');
+    background: #fff url('https://www.oispalyseolla.ml/original/img/128.png');
     background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
     font-size: 45px; }
@@ -580,7 +553,7 @@ hr {
         font-size: 25px; } }
   .tile.tile-256 .tile-inner {
 
-    background: #fff url('https://oispalyseolla.ml/img/256.png');
+    background: #fff url('https://www.oispalyseolla.ml/original/img/256.png');
     background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.41746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
     font-size: 45px; }
@@ -589,7 +562,7 @@ hr {
         font-size: 25px; } }
   .tile.tile-512 .tile-inner {
 
-    background: #fff url('https://oispalyseolla.ml/img/512.png');
+    background: #fff url('https://www.oispalyseolla.ml/original/img/512.png');
     background-size: cover;
     box-shadow: 0 0 30px 10px rgba(116, 116, 243, 0.42683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
     font-size: 45px; }
@@ -597,7 +570,7 @@ hr {
       .tile.tile-512 .tile-inner {
         font-size: 25px; } }
   .tile.tile-1024 .tile-inner {
-    background: #fff url('https://oispalyseolla.ml/img/1024.png');
+    background: #fff url('https://www.oispalyseolla.ml/original/img/1024.png');
     background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 116, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
     font-size: 35px; }
@@ -606,7 +579,7 @@ hr {
         font-size: 15px; } }
   .tile.tile-2048 .tile-inner {
 
-    background: #fff url('https://oispalyseolla.ml/img/2048.png');
+    background: #fff url('https://www.oispalyseolla.ml/original/img/2048.png');
     background-size: cover;
     box-shadow: 0 0 30px 10px rgba(116, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
     font-size: 35px; }
@@ -615,7 +588,7 @@ hr {
         font-size: 15px; } }
   .tile.tile-super .tile-inner {
 
-    background: #fff url('https://oispalyseolla.ml/img/super.png');
+    background: #fff url('https://www.oispalyseolla.ml/original/img/super.png');
     background-size: cover;
     font-size: 30px; }
     @media screen and (max-width: 480px) {
@@ -924,33 +897,33 @@ hr {
     transform: translate(202px, 202px); }
 
     .tile.tile-2 .tile-inner {
-      background: #fff url('https://oispalyseolla.ml/img/2.png');
+      background: #fff url('https://www.oispalyseolla.ml/original/img/2.png');
       background-size: cover;
       box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
 
     .tile.tile-4 .tile-inner {
-      background: #fff url('https://oispalyseolla.ml/img/4.png');
+      background: #fff url('https://www.oispalyseolla.ml/original/img/4.png');
       background-size: cover;
       box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
 
     .tile.tile-8 .tile-inner {
-      background: #fff url('https://oispalyseolla.ml/img/8.png');
+      background: #fff url('https://www.oispalyseolla.ml/original/img/8.png');
       background-size: cover;}
 
     .tile.tile-16 .tile-inner {
-      background: #fff url('https://oispalyseolla.ml/img/16.png');
+      background: #fff url('https://www.oispalyseolla.ml/original/img/16.png');
       background-size: cover;}
 
     .tile.tile-32 .tile-inner {
-      background: #fff url('https://oispalyseolla.ml/img/32.png');
+      background: #fff url('https://www.oispalyseolla.ml/original/img/32.png');
       background-size: cover;}
 
     .tile.tile-64 .tile-inner {
-      background: #fff url('https://oispalyseolla.ml/img/64.png');
+      background: #fff url('https://www.oispalyseolla.ml/original/img/64.png');
       background-size: cover;}
 
     .tile.tile-128 .tile-inner {
-      background: #fff url('https://oispalyseolla.ml/img/128.png');
+      background: #fff url('https://www.oispalyseolla.ml/original/img/128.png');
       background-size: cover;
       box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
       font-size: 45px; }
@@ -959,7 +932,7 @@ hr {
           font-size: 25px; } }
     .tile.tile-256 .tile-inner {
 
-      background: #fff url('https://oispalyseolla.ml/img/256.png');
+      background: #fff url('https://www.oispalyseolla.ml/original/img/256.png');
       background-size: cover;
       box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
       font-size: 45px; }
@@ -968,7 +941,7 @@ hr {
           font-size: 25px; } }
     .tile.tile-512 .tile-inner {
 
-      background: #fff url('https://oispalyseolla.ml/img/512.png');
+      background: #fff url('https://www.oispalyseolla.ml/original/img/512.png');
       background-size: cover;
       box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
       font-size: 45px; }
@@ -976,7 +949,7 @@ hr {
         .tile.tile-512 .tile-inner {
           font-size: 25px; } }
     .tile.tile-1024 .tile-inner {
-      background: #fff url('https://oispalyseolla.ml/img/1024.png');
+      background: #fff url('https://www.oispalyseolla.ml/original/img/1024.png');
       background-size: cover;
       box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
       font-size: 35px; }
@@ -985,7 +958,7 @@ hr {
           font-size: 15px; } }
     .tile.tile-2048 .tile-inner {
 
-      background: #fff url('https://oispalyseolla.ml/img/2048.png');
+      background: #fff url('https:/www.oispalyseolla.ml/original/img/2048.png');
       background-size: cover;
       box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
       font-size: 35px; }
@@ -994,7 +967,7 @@ hr {
           font-size: 15px; } }
     .tile.tile-super .tile-inner {
 
-      background: #fff url('https://oispalyseolla.ml/img/super.png');
+      background: #fff url('https://www.oispalyseolla.ml/original/img/super.png');
       background-size: cover;
       font-size: 30px; }
       @media screen and (max-width: 480px) {
